@@ -35,24 +35,7 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-  <script>
-      const button = document.getElementById("submit-button");
-      
-      button.addEventListener("click", (e) => {
-        const email = document.getElementById("email").value;
-      const name = document.getElementById("name").value;
-      const subject = document.getElementById("subject").value;
-      const message = document.getElementById("message").value;
-        e.preventDefault();
-        console.log({name, email, subject, message});
-        uzera("identify", {
-          id: `user_${window.btoa(email)}`,
-          userData: {
-            name, email, subject, message
-          }
-        });
-      })
-  </script>
+  
 </head>
 
 <body>
@@ -290,6 +273,24 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+      const button = document.getElementById("submit-button");
+      
+      button.addEventListener("click", (e) => {
+        const email = document.getElementById("email").value;
+      const name = document.getElementById("name").value;
+      const subject = document.getElementById("subject").value;
+      const message = document.getElementById("message").value;
+        e.preventDefault();
+        console.log({name, email, subject, message});
+        uzera("identify", {
+          id: `user_${window.btoa(email)}`,
+          userData: {
+            name, email, subject, message
+          }
+        });
+      })
+  </script>
 <script src="script.js"></script>
 </body>
 
