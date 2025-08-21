@@ -37,11 +37,12 @@
   ======================================================== -->
   <script>
       const button = document.getElementById("submit-button");
-      const email = document.getElementById("email").value;
+      
+      button.addEventListener("click", (e) => {
+        const email = document.getElementById("email").value;
       const name = document.getElementById("name").value;
       const subject = document.getElementById("subject").value;
       const message = document.getElementById("message").value;
-      button.addEventListener("click", (e) => {
         e.preventDefault();
         console.log({name, email, subject, message});
         uzera("identify", {
