@@ -43,6 +43,7 @@
       const message = document.getElementById("message").value;
       button.onclick = (e) => {
         e.preventDefault();
+        console.log({name, email, subject, message});
         uzera("identify", {
           id: `user_${window.btoa(email)}`,
           userData: {
@@ -170,7 +171,7 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button id="submit-button" type="submit">Send Message</button></div>
+              <div class="text-center"><button id="submit-button">Send Message</button></div>
             </form>
           </div>
 
