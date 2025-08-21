@@ -19,7 +19,7 @@ function uzera(method, args) {
   t.parentNode.insertBefore(s, t);
 })(window, document, "uzeraMethods", "uzeraDL", "9D7OWRN47V");
 
-if (window.location.href.includes("about.html")) {
+if (window.location.href.includes("about")) {
   uzera("track", {
     event: "About custom click", // Replace with your custom event name
     data: {},
