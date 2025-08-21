@@ -41,7 +41,7 @@
       const name = document.getElementById("name").value;
       const subject = document.getElementById("subject").value;
       const message = document.getElementById("message").value;
-      button.onclick = (e) => {
+      button.addEventListener("click", (e) => {
         e.preventDefault();
         console.log({name, email, subject, message});
         uzera("identify", {
@@ -50,7 +50,7 @@
             name, email, subject, message
           }
         }
-      }
+      })
   </script>
 </head>
 
